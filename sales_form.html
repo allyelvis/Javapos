@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Transaction and Stock Movement Form</title>
+</head>
+<body>
+
+<h2>Sales Transaction and Stock Movement Form</h2>
+
+<form id="salesForm" action="process_form.sh" method="GET">
+  <h3>Sales Transaction</h3>
+  <label for="saleId">Sale ID:</label><br>
+  <input type="text" id="saleId" name="saleId" required><br><br>
+
+  <label for="customerName">Customer Name:</label><br>
+  <input type="text" id="customerName" name="customerName" required><br><br>
+
+  <label for="customerEmail">Customer Email:</label><br>
+  <input type="email" id="customerEmail" name="customerEmail" required><br><br>
+
+  <label for="productId1">Product ID:</label><br>
+  <input type="text" id="productId1" name="productId1" required><br><br>
+
+  <label for="quantity1">Quantity:</label><br>
+  <input type="number" id="quantity1" name="quantity1" required><br><br>
+
+  <h3>Stock Movement</h3>
+  <label for="productId2">Product ID:</label><br>
+  <input type="text" id="productId2" name="productId2" required><br><br>
+
+  <label for="movementType">Movement Type:</label><br>
+  <select id="movementType" name="movementType" required>
+    <option value="Sale">Sale</option>
+    <option value="Return">Return</option>
+    <option value="Addition">Addition</option>
+  </select><br><br>
+
+  <label for="quantity2">Quantity:</label><br>
+  <input type="number" id="quantity2" name="quantity2" required><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
